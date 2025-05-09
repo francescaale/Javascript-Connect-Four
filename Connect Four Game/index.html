@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+<h1>Connect Four Game</h1>
+<h3>Welcome to the Connect Four game! <br> Let's Play!</h3>
+
+<div class="instructions">
+    <p> INSTRUCTIONS: </p>
+    <p> 1. Click on a hidden block to reveal a colored disc.<br><br>
+        2. Strategically reveal discs by clicking on hidden blocks to create a line of four, horizontally, vertically or diagonally.<br><br>
+        3. Aim to achieve this with two different colored discs to win.<br><br>
+        4. Customize the grid size before starting the game.<br><br>
+        5. Restart the game at any time if needed.<br><br>
+        6. Have fun and aim for victory!
+    </p>
+
+</div>
+
+<br><br><br><br><br><br><br>
+<div class="size">
+    <p class="style"> Rows: <input class="numbers" type="number" id="rows" value="4" min="4" max="8"></p>
+    <p class="style"> Columns: <input class="numbers" type="number" id="columns" value="4" min="4" max="8"></p>
+	<p class="style"> <input type="button" value="create" onclick="grid();"></p>
+</div>
+
+<div id="grid-container">
+<div id="areacell" class="centre">
+
+<div>
+    <img class="input" id="position_0_3" src="images/cover.png" onclick="btnselect(0,3);">
+    <img class="input" id="position_1_3" src="images/cover.png" onclick="btnselect(1,3);">
+    <img class="input" id="position_2_3" src="images/cover.png" onclick="btnselect(2,3);">
+    <img class="input" id="position_3_3" src="images/cover.png" onclick="btnselect(3,3);">
+</div>
+
+<div>
+    <img class="input" id="position_0_2" src="images/cover.png" onclick="btnselect(0,2);">
+    <img class="input" id="position_1_2" src="images/cover.png" onclick="btnselect(1,2);">
+    <img class="input" id="position_2_2" src="images/cover.png" onclick="btnselect(2,2);">
+    <img class="input" id="position_3_2" src="images/cover.png" onclick="btnselect(3,2);">
+</div>
+
+<div>
+    <img class="input" id="position_0_1" src="images/cover.png" onclick="btnselect(0,1);">
+    <img class="input" id="position_1_1" src="images/cover.png" onclick="btnselect(1,1);">
+    <img class="input" id="position_2_1" src="images/cover.png" onclick="btnselect(2,1);">
+    <img class="input" id="position_3_1" src="images/cover.png" onclick="btnselect(3,1);">
+</div>
+
+<div>
+    <img class="input" id="position_0_0" src="images/cover.png" onclick="btnselect(0,0);">
+    <img class="input" id="position_1_0" src="images/cover.png" onclick="btnselect(1,0);">
+    <img class="input" id="position_2_0" src="images/cover.png" onclick="btnselect(2,0);">
+    <img class="input" id="position_3_0" src="images/cover.png" onclick="btnselect(3,0);">
+</div>
+
+</div>
+</div>
+
+<br><br><br><br>
+<div class="centre" id="messageArea">
+    <p id="message"> </p>
+    <input class="centre button" id="reset" type="button" value="Play Again!" onclick="reset();"/>
+</div>
+
+
+</body>
+</html>
