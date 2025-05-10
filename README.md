@@ -11,4 +11,4 @@ Features
 
 - Turn-based player logic with color-coded discs
 - Win detection in all directions
-- Responsive layout and simple UI
+- Good game layout and simple UI
